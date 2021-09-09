@@ -1,0 +1,11 @@
+.comments {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+}
+
+.comment-container {
+  overflow-y: scroll;
+  max-height: 20vh;
+  width: 30vw;
+}

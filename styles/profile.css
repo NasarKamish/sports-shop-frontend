@@ -1,0 +1,21 @@
+.profile {
+  position: fixed;
+  top: 0;
+  left: -100vw;
+  width: 100vw;
+  height: 100vh;
+  padding: 5%;
+  padding-left: 10vw;
+  z-index: 10;
+  transition: all 0.3s linear;
+}
+
+.profile.show {
+  left: 0%;
+  background-color: hotpink;
+}
+
+.profile-item {
+  border-top: black 5px double;
+  border-bottom: black 5px double;
+}

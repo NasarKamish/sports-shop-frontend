@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/nav.css" />
+    <link rel="stylesheet" href="./styles/profile.css" />
+    <link rel="stylesheet" href="./styles/cart.css" />
+    <link rel="stylesheet" href="./styles/comments.css" />
+    <link rel="stylesheet" href="./styles/add.css" />
+    <link rel="stylesheet" href="./styles/register.css" />
+    <link rel="stylesheet" href="./styles/edit.css" />
+    <link rel="stylesheet" href="./styles/content.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Products</title>
+  </head>
+  <body>
+    <nav>
+      <button onclick="showRegister('Register')" class="nav-link">
+        <i class="fas fa-registered"></i><span class="popup">Register</span>
+      </button>
+      <button onclick="showRegister('Login')" class="nav-link">
+        <i class="fas fa-sign-in-alt"></i><span class="popup">Log-in</span>
+      </button>
+      <button onclick="showProfile()" class="nav-link">
+        <i class="fas fa-user"></i><span class="popup">Profile</span>
+      </button>
+      <button onclick="showCart('Show')" class="nav-link">
+        <i class="fas fa-shopping-cart"></i><span class="popup">Cart</span>
+      </button>
+      <button onclick="showAdd('Add')" class="nav-link">
+        <i class="fas fa-plus"></i><span class="popup">Add Product</span>
+      </button>
+      <button onclick="logout()" class="nav-link">
+        <i class="fas fa-sign-out-alt"></i><span class="popup">Log-out</span>
+      </button>
+    </nav>
+    <section class="content">
+      <!-- Item list -->
+    </section>
+
+    <section class="view-item">
+      <!-- View single item -->
+      <!-- View comments -->
+      <div class="comments"></div>
+    </section>
+
+    <section class="edit-item">
+      <!-- Edit single product -->
+    </section>
+
+    <section class="register">
+      <!-- Login/Register -->
+    </section>
+
+    <section class="add-item">
+      <!-- Add a product -->
+    </section>
+
+    <section class="cart-container">
+      <!-- Add items in cart -->
+      <div class="items-container">
+        <!-- items in the cart -->
+      </div>
+
+      <div class="total-container">
+        <!-- contains total -->
+      </div>
+
+      <div class="cart-buttons">
+        <button onclick="addBuy()" class="cart-buy">Buy Cart</button>
+        <button onclick="clearCart()" class="cart-clear">Clear Cart</button>
+        <!-- Buttons for the cart -->
+      </div>
+
+      <div class="cart-edit">
+        <!-- Edit an item in the cart -->
+      </div>
+    </section>
+
+    <section class="profile">
+      <!-- The person's Profile -->
+      <button onclick="showProfile('close')" class="close">X</button>
+
+      <div class="profile-info">
+        <!-- Person's Details -->
+      </div>
+
+      <div class="profile-carts">
+        <!-- Person's Expences -->
+      </div>
+    </section>
+
+    <script src="./scripts/filter.js"></script>
+    <script src="./scripts/add.js"></script>
+    <script src="./scripts/delete.js"></script>
+    <script src="./scripts/edit.js"></script>
+    <script src="./scripts/show.js"></script>
+    <script src="./scripts/populate.js"></script>
+    <script
+      src="https://kit.fontawesome.com/5354e3c12c.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

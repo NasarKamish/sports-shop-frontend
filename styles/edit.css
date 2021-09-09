@@ -1,0 +1,16 @@
+.edit-item {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100vw;
+  height: 100vh;
+  padding: 5%;
+  padding-left: 10vw;
+  z-index: 10;
+  transition: all 0.3s linear;
+}
+
+.edit-item.show {
+  left: 0%;
+  background-color: aqua;
+}

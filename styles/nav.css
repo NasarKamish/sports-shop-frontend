@@ -1,0 +1,48 @@
+nav {
+  width: 60px;
+  height: 100vh;
+  background-color: darkblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  top: 0%;
+  z-index: 1;
+}
+
+.nav-link {
+  padding: 10%;
+  border: 5px solid darkblue;
+  border-radius: 100%;
+  background-color: darkblue;
+  font-weight: 500;
+  color: white;
+  height: 40px;
+  width: 40px;
+  position: relative;
+  left: 0%;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.nav-link:hover {
+  background-color: blue;
+}
+
+.nav-link:hover .popup {
+  background-color: black;
+  visibility: visible;
+}
+
+.nav-link .popup {
+  position: absolute;
+  visibility: hidden;
+  padding: 10%;
+  margin-left: 2.5vw;
+  top: 0;
+  width: 120px;
+  color: white;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+}

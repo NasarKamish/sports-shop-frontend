@@ -1,0 +1,16 @@
+.add-item {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0%;
+  left: -100vw;
+  padding: 5%;
+  padding-left: 10vw;
+  z-index: 10;
+  transition: all 0.3s linear;
+}
+
+.add-item.show {
+  background-color: lime;
+  left: 0%;
+}
