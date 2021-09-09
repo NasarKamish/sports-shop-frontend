@@ -65,7 +65,7 @@ function addItem() {
     }
   });
   if (add_valid) {
-    if (parseInt(item_inputs[1])) {
+    if (parseInt(item_inputs[1].value)) {
       json_dict = {
         product_name: item_inputs[0].value,
         product_price: item_inputs[1].value,
