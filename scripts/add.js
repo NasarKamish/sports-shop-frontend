@@ -17,6 +17,7 @@ function addRegister() {
       username: register_inputs[3].value,
       password: register_inputs[4].value,
     };
+    let registerVal = true;
 
     fetch(
       `https://fathomless-wildwood-85481.herokuapp.com/user-registration/`,
@@ -27,10 +28,14 @@ function addRegister() {
           "Content-type": "application/json; charset=UTF-8",
         },
       }
-    );
+    ).catch((registerVal = false));
 
-    popLogin();
-    alert("Please re-enter your details to continue.");
+    if (registerVal) {
+      // popLogin();
+      alert("Please re-enter your details to continue.");
+    } else {
+      alert("Register did not work");
+    }
 
     // alert("You have successfully registered.");
 
@@ -271,7 +276,7 @@ function addBuy() {
   );
 }
 
-// // // // // // // SEEING IF CART AND ITEMS WORK // // // // // //
+// // // // // // // SEEING IF CART AND ITEMS AND USERS WORK // // // // // //
 
 // fetch(`https://fathomless-wildwood-85481.herokuapp.com/get-cart/`).then((request) => {
 //   request.json().then((obj) => {
@@ -286,3 +291,12 @@ function addBuy() {
 //     console.log(data);
 //   });
 // });
+
+// fetch(`https://fathomless-wildwood-85481.herokuapp.com/get-users/`).then(
+//   (request) => {
+//     request.json().then((obj) => {
+//       data = obj.data;
+//       console.log(data);
+//     });
+//   }
+// );

@@ -16,6 +16,9 @@
     <title>Products</title>
   </head>
   <body>
+    <button onclick="showNav()" class="nav-toggle">
+      <i class="fas fa-bars"></i>
+    </button>
     <nav>
       <button onclick="showRegister('Register')" class="nav-link">
         <i class="fas fa-registered"></i><span class="popup">Register</span>
@@ -35,6 +38,15 @@
       <button onclick="logout()" class="nav-link">
         <i class="fas fa-sign-out-alt"></i><span class="popup">Log-out</span>
       </button>
+
+      <button onclick="showRegister('Register')" class="nav-mobile">
+        Register
+      </button>
+      <button onclick="showRegister('Login')" class="nav-mobile">Log-in</button>
+      <button onclick="showProfile()" class="nav-mobile">Profile</button>
+      <button onclick="showCart('Show')" class="nav-mobile">Cart</button>
+      <button onclick="showAdd('Add')" class="nav-mobile">Add Product</button>
+      <button onclick="logout()" class="nav-mobile">Log-out</button>
     </nav>
     <section class="content">
       <!-- Item list -->

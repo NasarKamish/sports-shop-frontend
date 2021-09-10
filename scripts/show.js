@@ -102,6 +102,9 @@ function showProfile(type) {
     }
   } else {
     alert("Please register.");
-    // showNav(index, 1);
   }
+}
+
+function showNav() {
+  document.querySelector("nav").classList.toggle("show");
 }

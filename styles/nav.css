@@ -9,6 +9,7 @@ nav {
   position: fixed;
   top: 0%;
   z-index: 1;
+  transition: all 0.3s linear;
 }
 
 .nav-link {
@@ -24,6 +25,12 @@ nav {
   left: 0%;
   cursor: pointer;
   transition: all 0.3s linear;
+}
+
+.nav-mobile {
+  /* visibility: hidden; */
+  display: none;
+  color: red;
 }
 
 .nav-link:hover {
@@ -45,4 +52,41 @@ nav {
   color: white;
   border-radius: 10px;
   transition: all 0.3s linear;
+}
+
+.nav-toggle {
+  position: fixed;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  top: 5px;
+  left: 5px;
+  font-size: 30px;
+  border: none;
+  background: none;
+  color: blue;
+}
+
+.nav-toggle {
+  visibility: hidden;
+}
+
+@media (max-width: 1000px) {
+  nav {
+    left: -100vw;
+    width: 100vw;
+  }
+  nav.show {
+    left: 0%;
+  }
+  .nav-link {
+    visibility: hidden;
+  }
+  .nav-link .popup {
+    visibility: hidden;
+  }
+  .nav-moblie {
+    display: block;
+    visibility: visible;
+  }
 }
