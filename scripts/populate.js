@@ -152,7 +152,6 @@ function popRegister() {
   class="register-form"
 >
   <h3 class="register-head">Register</h3>
-  <hr class="register-line" />
 
   <!-- first_name -->
   <div class="register-div">
@@ -231,7 +230,6 @@ function popLogin() {
   class="login-form"
 >
   <h3 class="login-head">Login</h3>
-  <hr class="login-line" />
 
   <!-- username -->
   <div class="login-div">
