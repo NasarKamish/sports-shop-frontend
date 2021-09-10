@@ -12,10 +12,25 @@
 
 .profile.show {
   left: 0%;
-  background-color: hotpink;
+  background-color: white;
+  /* background-color: darkblue; */
 }
 
 .profile-item {
   border-top: black 5px double;
   border-bottom: black 5px double;
+}
+
+.profile-info {
+  background-color: blue;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.span-info {
+  color: white;
+}
+
+.profile .info {
+  color: black;
 }

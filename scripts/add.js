@@ -207,7 +207,6 @@ function addBuy() {
     progress: "in_progress",
     user_id: window.localStorage.getItem("Person_id"),
   };
-
   fetch(`https://fathomless-wildwood-85481.herokuapp.com/create-cart/`, {
     method: "POST",
     body: JSON.stringify(cart_dict),
@@ -215,9 +214,11 @@ function addBuy() {
       "Content-type": "application/json; charset=UTF-8",
     },
   });
+  setTimeout(addBuyItems, 1000);
+}
 
+function addBuyItems() {
   let cart_id = "";
-  setTimeout(console.log(""), 5000);
 
   fetch(`https://fathomless-wildwood-85481.herokuapp.com/get-cart/`).then(
     (request) => {

@@ -510,9 +510,9 @@ function popProfile() {
       let profile_info = document.querySelector(".profile-info");
       profile_info.innerHTML = ``;
       profile_info.innerHTML += `
-        <h3 class="profile-fullname"> Full name: ${userinfo[1]} ${userinfo[2]}</h3>
-        <p class="profile-username">Username: ${userinfo[4]}</p>
-        <p class="profile-email">Email: ${userinfo[3]}</p>
+        <h3 class="profile-fullname info"><span class="span-info">Full name:</span> ${userinfo[1]} ${userinfo[2]}</h3>
+        <p class="profile-username info"><span class="span-info">Username:</span> ${userinfo[4]}</p>
+        <p class="profile-email info"><span class="span-info">Email:</span> ${userinfo[3]}</p>
       `;
     });
   });
