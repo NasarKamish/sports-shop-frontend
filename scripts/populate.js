@@ -87,8 +87,9 @@ function popEdit(id) {
     request.json().then((obj) => {
       data = obj.data;
       let edit = document.querySelector(".edit-item");
-      edit.innerHTML = `<h2 class="name">${data[1]}</h2>
-        <form>
+      edit.innerHTML = `
+        <form class="edit-form">
+        <h2 class="name">${data[1]}</h2>
 
           <!-- product_name -->
           <div class="product-div">
@@ -338,7 +339,6 @@ function popComment(id) {
         class="comment-form"
       >
         <h3 class="comment-head">Comment</h3>
-        <hr class="comment-line" />
   
         <!-- comment -->
         <div class="comment-div">

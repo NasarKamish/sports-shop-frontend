@@ -12,5 +12,41 @@
 
 .edit-item.show {
   left: 0%;
-  background-color: aqua;
+  background-color: white;
+}
+
+/* Form */
+
+.edit-form {
+  background-color: blue;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+.edit-form input,
+.edit-form select {
+  margin-top: 5px;
+  padding: 5px;
+  background-color: darkblue;
+  color: white;
+  border: white solid 2px;
+  border-radius: 10px;
+}
+
+.edit-form input::placeholder,
+.edit-form select::placeholder {
+  color: white;
+}
+
+.edit-form .edit-btn {
+  background-color: darkblue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 150px;
+  height: 30px;
+  /* padding: 10px; */
+  border-radius: 10px;
 }
