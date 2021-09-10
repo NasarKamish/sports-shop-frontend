@@ -32,17 +32,17 @@ function filterItems(category) {
             if (category == product[5]) {
               console.log("HI");
               content.innerHTML += `<div class="item">
-            <h2 class="name">${product[1]}</h2>
-            <p class="category"><span class="info">Category:</span> ${product[5]}</p>
-            <p class="description"><span class="info">Description:</span> ${product[4]}</p>
-            <p class="date"><span class="info">Date:</span> ${product[3]}</p>
-            <p class="price"><span class="info">Price:</span> R ${product[2]}</p>
-            <div class="buttons">
-            <button onclick="showView(${product[0]})" class="view btn">View</button>
-            <button onclick="showEdit(${product[0]})" class="edit btn">Edit</button>
-            <button onclick="deleteProduct(${product[0]})" class="delete btn">Del</button>
-            </div>
-            </div>`;
+                  <h2 class="name">${product[1]}</h2>
+                  <p class="category"><span class="info">Category:</span> ${product[5]}</p>
+                  <p class="description"><span class="info">Description:</span> ${product[4]}</p>
+                  <p class="date"><span class="info">Date:</span> ${product[3]}</p>
+                  <p class="price"><span class="info">Price:</span> R ${product[2]}</p>
+                  <div class="buttons">
+                    <button onclick="showView(${product[0]})" class="view btn">View</button>
+                    <button onclick="showEdit(${product[0]})" class="edit btn">Edit</button>
+                    <button onclick="deleteProduct(${product[0]})" class="delete btn">Del</button>
+                  </div>
+                </div>`;
             }
           }
         });
