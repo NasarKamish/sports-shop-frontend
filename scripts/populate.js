@@ -529,8 +529,8 @@ function popProfile() {
           if (cart[3] == window.localStorage.getItem("Person_id")) {
             profile_carts.innerHTML += `
             <div class="profile-cart cart-${cart[0]}">
-              <h3 class="profile-cart-id">Cart id: ${cart[0]}</h3>
-              <p class="profile-cart-total">Total Cost: R ${cart[2]}</p>
+              <h3 class="profile-cart-id"><span class="profile-cart-info">Cart id:</span> ${cart[0]}</h3>
+              <p class="profile-cart-total"><span class="profile-cart-info">Total Cost:</span> R ${cart[2]}</p>
               <button onclick="popProfileCartItems(${cart[0]})" class="profile-cart-btn btn-${cart[0]}">Show Items</button>
               <div class="profile-cart-item-${cart[0]}"></div>
             </div>
@@ -564,9 +564,9 @@ function popProfileCartItems(id) {
                   data = obj.data;
                   profile_cart.innerHTML += `
                     <div class="profile-item">
-                      <p class="profile-item-name">Name: ${data[1]}</p>
-                      <p class="profile-item-quantity">Quantity: ${item[1]}</p>
-                      <p class="profile-item-cost">Total Cost: R ${item[2]}</p>
+                      <p class="profile-item-name"><span class="profile-item-info">Name:</span> ${data[1]}</p>
+                      <p class="profile-item-quantity"><span class="profile-item-info">Quantity:</span> ${item[1]}</p>
+                      <p class="profile-item-cost"><span class="profile-item-info">Total Cost:</span> R ${item[2]}</p>
                     </div>
                   `;
                 });
