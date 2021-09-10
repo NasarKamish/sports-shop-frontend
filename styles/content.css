@@ -97,3 +97,11 @@
   border-color: blue;
   color: blue;
 }
+@media (max-width: 900px) {
+  .filter {
+    padding-left: 48px;
+  }
+  .filter .btn {
+    width: 25%;
+  }
+}

@@ -30,7 +30,6 @@ function filterItems(category) {
           </div>`;
           } else {
             if (category == product[5]) {
-              console.log("HI");
               content.innerHTML += `<div class="item">
                   <h2 class="name">${product[1]}</h2>
                   <p class="category"><span class="info">Category:</span> ${product[5]}</p>
