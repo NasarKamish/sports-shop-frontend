@@ -13,6 +13,7 @@ nav {
 }
 
 .nav-link {
+  display: block;
   padding: 10%;
   border: 5px solid darkblue;
   border-radius: 100%;
@@ -28,9 +29,7 @@ nav {
 }
 
 .nav-mobile {
-  /* visibility: hidden; */
   display: none;
-  color: red;
 }
 
 .nav-link:hover {
@@ -65,9 +64,6 @@ nav {
   border: none;
   background: none;
   color: blue;
-}
-
-.nav-toggle {
   visibility: hidden;
 }
 
@@ -77,16 +73,29 @@ nav {
     width: 100vw;
   }
   nav.show {
-    left: 0%;
+    left: 0;
   }
   .nav-link {
-    visibility: hidden;
+    display: none;
   }
   .nav-link .popup {
-    visibility: hidden;
+    display: none;
   }
-  .nav-moblie {
+  .nav-mobile {
     display: block;
+    border: none;
+    background: darkblue;
+    color: white;
+    /* padding: 5%; */
+    width: 20vw;
+    height: 5vw;
+    border-radius: 20px;
+    transition: all 0.3s linear;
+  }
+  .nav-mobile:hover {
+    background: blue;
+  }
+  .nav-toggle {
     visibility: visible;
   }
 }
