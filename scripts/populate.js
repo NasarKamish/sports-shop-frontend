@@ -268,9 +268,10 @@ function popLogin() {
 
 function popAdd() {
   let addContainer = document.querySelector(".add-item");
-  addContainer.innerHTML = `<form>
+  addContainer.innerHTML = `
+  <button onclick="showAdd()" class="close" type="button">X</button>
+  <form class="product-form">
   <h3 class="register-head">Add Product</h3>
-  <hr class="register-line"/>
 
   <!-- product_name -->
   <div class="product-div">
@@ -319,7 +320,6 @@ function popAdd() {
   </div>
 
   <button onclick="addItem()" type="button">Submit</button>
-  <button onclick="showAdd()" class="close" type="button">X</button>
 </form>`;
 }
 
