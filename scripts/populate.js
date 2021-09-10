@@ -441,7 +441,12 @@ function popCart(type) {
                 <button onclick="showCartEdit(${data[0]})" class="cart-edit-btn">Edit</button>
               </div>`;
           let totalContainer = document.querySelector(".total-container");
-          totalContainer.innerHTML = `<div class="total">Altogether the Total Price: R ${totalPrice}</div>`;
+          totalContainer.innerHTML = `<div class="total">Altogether the Total Price: R ${totalPrice}</div>
+          <div class="cart-buttons">
+          <button onclick="addBuy()" class="cart-buy">Buy Cart</button>
+          <button onclick="clearCart()" class="cart-clear">Clear Cart</button>
+          </div>
+          `;
         });
       });
     });

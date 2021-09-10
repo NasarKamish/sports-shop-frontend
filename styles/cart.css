@@ -12,7 +12,7 @@
 
 .cart-container.show {
   left: 0%;
-  background-color: chartreuse;
+  background-color: white;
 }
 
 .cart-edit {
@@ -29,5 +29,38 @@
 
 .cart-edit.show {
   left: 0%;
-  background-color: springgreen;
+  background-color: white;
+}
+
+/* Container */
+
+.items-container,
+.total-container {
+  margin-bottom: 10px;
+  background-color: blue;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+.items-container .cart-item {
+  margin-top: 5px;
+  padding: 5px;
+  background-color: royalblue;
+  color: white;
+  /* border: white solid 2px; */
+  border-radius: 10px;
+}
+
+.items-container .cart-edit-btn,
+.total-container button {
+  background-color: darkblue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 150px;
+  height: 30px;
+  /* padding: 10px; */
+  border-radius: 10px;
 }
